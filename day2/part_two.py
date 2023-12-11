@@ -1,5 +1,3 @@
-import re
-
 def get_data(file:str = 'data.txt'):
     try:
         with open(file, 'r') as f:
@@ -23,7 +21,6 @@ if __name__ == "__main__":
         # Remove the "Game " in "Game 1", to extract the game number
         game_num = int(game_data.replace("Game ", ""))
 
-        
         cubes = {
             "red": [],
             "green": [],
@@ -54,4 +51,5 @@ if __name__ == "__main__":
         blue = 1 if blue == 0 else blue
 
         total += (red*green*blue)
+        
     print(f"Answer for Part 2: {total}")

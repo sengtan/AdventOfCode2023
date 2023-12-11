@@ -1,5 +1,3 @@
-import re
-
 def get_data(file:str = 'data.txt'):
     try:
         with open(file, 'r') as f:
